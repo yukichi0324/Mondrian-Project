@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .grid-area {
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+      gap: 9px;
+    }
+    .red {
+      background-color: #e72f24;
+      border-right: 9px solid #000;
+      border-bottom: 9px solid #000;
+      width: 320px;
+      height: 414px;
+    }
+    .white-1 {
+      background-color: #f0f1ec;
+      border-bottom: 9px solid #000;
+      height: 414px;
+      width: 419px;
+      grid-column: span 3;
+    }
+    .white-2 {
+      background-color: #f0f1ec;
+      border-right: 9px solid #000;
+      border-bottom: 9px solid #000;
+      grid-row: span 2;
+      width: 320px;
+      height: 295px;
+    }
+    .white-3 {
+      background-color: #f0f1ec;
+      border-right: 9px solid #000;
+      border-bottom: 9px solid #000;
+      grid-column: span 2;
+      grid-row: span 2;
+      /* 130+19+155 */
+      height: 295px;
+      /* 198+9+153 */
+      width: 360px;
+    }
+    .blue {
+      background-color: #004592;
+      position: relative;
+      height: 130px;
+      border-bottom: 19px solid #000;
+    }
+    .white-4 {
+      background-color: #f0f1ec;
+      grid-row: span 2;
+      height: 184px;
+    }
+    .white-5 {
+      background-color: #f0f1ec;
+      border-right: 9px solid #000;
+      height: 20px;
+      width: 320px;
+    }
+    .yellow {
+      background-color: #F9D01E;
+      border-right: 9px solid #000;
+      width: 198px;
+    }
+    .black {
+      background-color: #232629;
+      border-right: 9px solid #000;
+      width: 153px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="grid-area">
+    <div class="red"></div>
+    <div class="white-1"></div>
+    <div class="white-2"></div>
+    <div class="white-3"></div>
+    <div class="blue"></div>
+    <div class="white-4"></div>
+    <div class="white-5"></div>
+    <div class="yellow"></div>
+    <div class="black"></div>
+  </div>
+</body>
+
+</html>
